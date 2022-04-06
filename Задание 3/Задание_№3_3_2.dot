@@ -1,0 +1,44 @@
+digraph G{
+  rankdir=LR;
+  node [shape = doublecircle] q0, q0q1,q0q1q2,q0q4q5,q0q1q6,q0q5q7,q0q7,q0q5;
+  node [shape = circle];
+  q0 [color = green];
+  q0,q0q1,q0q1q2,q0q4q5,q0q1q6,q0q5q7,q0q7,q0q5[color = red];
+   
+  q0 -> q0q1 [label = "a"];
+  q0 -> q5 [label = "b"];
+  
+  q0q1 -> q0q1q2 [label = "a"];
+  q0q1 -> q4q5 [label = "b"];
+  
+  q0q1q2 -> q0q1q2 [label = "a"];
+  q0q1q2 -> q0q4q5 [label = "b"];
+
+  q5 -> q6 [label = "a"];  
+  q5 -> q7 [label = "b"];
+  
+  q4q5 -> q6 [label = "a"]; 
+  q4q5 -> q0q7 [label = "b"];
+  
+  q0q4q5 -> q0q1q6 [label = "a"];
+  q0q4q5 -> q0q5q7 [label = "a"];
+  
+  q6 -> q0 [label = "b"];
+  q7 -> q0 [label = "b"];
+  
+  q0q7 -> q0q1 [label = "a"];
+  q0q7 -> q0q5 [label = "b"];
+  
+  q0q5 -> q0q1q6 [label = "a"];
+  q0q5 -> q5q7 [label = "b"];
+  
+  q5q7 -> q6 [label = "a"];
+  q5q7 -> q0q7 [label = "b"];
+  
+  q0q1q6 -> q0q1q6 [label = "a"];
+  q0q1q6 -> q0q4q5 [label = "b"];
+  
+  q0q5q7 -> q0q1q6 [label = "a"];
+  q0q5q7 -> q0q5q7 [label = "b"];
+  
+}

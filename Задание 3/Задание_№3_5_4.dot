@@ -1,0 +1,35 @@
+digraph G{
+  rankdir=LR;
+  node [shape = doublecircle] p1;
+  node [shape = circle];
+  q0 [color = green];
+  p1 [color = red];
+
+  q0 -> q1 [label = "a,b"];
+  
+  q1 -> q0q2 [label = "a"]; 
+  q1 -> q0q3 [label = "b"];
+  
+  q0q2 -> p3 [label = "a"];
+  q0q2 -> q1q4 [label = "b"];
+  
+  q0q3 -> q1q8 [label = "a"];
+  q0q3 -> p2 [label = "b"];
+  
+  p3 -> p1 [label = "a,b"];
+
+  
+  q1q4 -> q0q2q5 [label = "a"];
+  q1q4 -> q0q3 [label = "b"];
+  
+  q1q8 -> q0q2 [label = "a"];
+  q1q8 -> q0q3q9 [label = "b"];
+  
+  p2 -> p1 [label = "a,b"];
+  
+  p1 -> p1 [label = "a,b"];
+  
+  q0q2q5 -> p3 [label = "a,b"];
+  q0q3q9 -> p2 [label = "a,b"];
+
+}

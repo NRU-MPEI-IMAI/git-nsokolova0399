@@ -1,0 +1,113 @@
+digraph G2{
+  rankdir=RL;
+  node [shape = doublecircle] q3p5, q3p2,q3p3,q3p4,q3p1;
+  node [shape = circle];
+  q0p0 [color = green];
+  q3p5, q3p2,q3p3,q3p4,q3p1 [color = red];
+  q0p0 -> q1p1 [label = "a"];
+  q0p0 -> q1p5 [label = "b"];
+  q0p1 -> q1p0 [label = "a"];
+  q0p1 -> q1p4 [label = "b"];
+  q0p2 -> q1p3 [label = "a"];
+  q0p2 -> q1p0 [label = "b"];
+  q0p3 -> q1p2 [label = "a"];
+  q0p3 -> q1p1 [label = "b"];
+  q0p4 -> q1p5 [label = "a"];
+  q0p4 -> q1p3 [label = "b"];
+  q0p5 -> q1p4 [label = "a"];
+  q0p5 -> q1p2 [label = "b"];
+  
+  
+  q1p0 -> q2p1 [label = "a"];
+  q1p0 -> q2p5 [label = "b"];
+  q1p1 -> q2p0 [label = "a"];
+  q1p1 -> q2p4 [label = "b"];
+  q1p2 -> q2p3 [label = "a"];
+  q1p2 -> q2p0 [label = "b"];
+  q1p3 -> q2p2 [label = "a"];
+  q1p3 -> q2p1 [label = "b"];
+  q1p4 -> q2p5 [label = "a"];
+  q1p4 -> q2p3 [label = "b"];
+  q1p5 -> q2p4 [label = "a"];
+  q1p5 -> q2p2 [label = "b"];
+  
+  q2p0 -> q3p1 [label = "a"];
+  q2p0 -> q3p5 [label = "b"];
+  q2p1 -> q3p0 [label = "a"];
+  q2p1 -> q3p4 [label = "b"];
+  q2p2 -> q3p3 [label = "a"];
+  q2p2 -> q3p0 [label = "b"];
+  q2p3 -> q3p2 [label = "a"];
+  q2p3 -> q3p1 [label = "b"];
+  q2p4 -> q3p5 [label = "a"];
+  q2p4 -> q3p3 [label = "b"];
+  q2p5 -> q3p4 [label = "a"];
+  q2p5 -> q3p2 [label = "b"];
+  
+  q3p0 -> q4p1 [label = "a"];
+  q3p0 -> q4p5 [label = "b"];
+  q3p1 -> q4p0 [label = "a"];
+  q3p1 -> q4p4 [label = "b"];
+  q3p2 -> q4p3 [label = "a"];
+  q3p2 -> q4p0 [label = "b"];
+  q3p3 -> q4p2 [label = "a"];
+  q3p3 -> q4p1 [label = "b"];
+  q3p4 -> q4p5 [label = "a"];
+  q3p4 -> q4p3 [label = "b"];
+  q3p5 -> q4p4 [label = "a"];
+  q3p5 -> q4p2 [label = "b"];
+  
+  q4p0 -> q3p1 [label = "a"];
+  q4p0 -> q3p5 [label = "b"];
+  q4p1 -> q3p0 [label = "a"];
+  q4p1 -> q3p4 [label = "b"];
+  q4p2 -> q3p3 [label = "a"];
+  q4p2 -> q3p0 [label = "b"];
+  q4p3 -> q3p2 [label = "a"];
+  q4p3 -> q3p1 [label = "b"];
+  q4p4 -> q3p5 [label = "a"];
+  q4p4 -> q3p3 [label = "b"];
+  q4p5 -> q3p4 [label = "a"];
+  q4p5 -> q3p2 [label = "b"];
+  
+  q5p0 -> q4p1 [label = "a"];
+  q5p0 -> q4p5 [label = "b"];
+  q5p1 -> q4p0 [label = "a"];
+  q5p1 -> q4p4 [label = "b"];
+  q5p2 -> q4p3 [label = "a"];
+  q5p2 -> q4p0 [label = "b"];
+  q5p3 -> q4p2 [label = "a"];
+  q5p3 -> q4p1 [label = "b"];
+  q5p4 -> q4p5 [label = "a"];
+  q5p4 -> q4p3 [label = "b"];
+  q5p5 -> q4p4 [label = "a"];
+  q5p5 -> q4p2 [label = "b"];
+  
+  
+  q6p0 -> q5p1 [label = "a"];
+  q6p0 -> q5p5 [label = "b"];
+  q6p1 -> q5p0 [label = "a"];
+  q6p1 -> q5p4 [label = "b"];
+  q6p2 -> q5p3 [label = "a"];
+  q6p2 -> q5p0 [label = "b"];
+  q6p3 -> q5p2 [label = "a"];
+  q6p3 -> q5p1 [label = "b"];
+  q6p4 -> q5p5 [label = "a"];
+  q6p4 -> q5p3 [label = "b"];
+  q6p5 -> q5p4 [label = "a"];
+  q6p5 -> q5p2 [label = "b"];
+  
+  
+  q7p0 -> q6p1 [label = "a"];
+  q7p0 -> q6p5 [label = "b"];
+  q7p1 -> q6p0 [label = "a"];
+  q7p1 -> q6p4 [label = "b"];
+  q7p2 -> q6p3 [label = "a"];
+  q7p2 -> q6p0 [label = "b"];
+  q7p3 -> q6p2 [label = "a"];
+  q7p3 -> q6p1 [label = "b"];
+  q7p4 -> q6p5 [label = "a"];
+  q7p4 -> q6p3 [label = "b"];
+  q7p5 -> q6p4 [label = "a"];
+  q7p5 -> q6p2 [label = "b"];
+}
